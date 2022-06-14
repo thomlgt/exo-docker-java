@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  front:
+    build: ./front
+    container_name: front
+    ports:
+      - 80:80
+  back:
+    build: ./back
+    container_name: back
+    ports:
+      - 8080:8080
